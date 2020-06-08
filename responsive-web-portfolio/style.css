@@ -1,0 +1,139 @@
+/* Desktop View */
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #EBEBEB;
+}
+
+header {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    background-color: rgb(83, 83, 83);
+    min-height: 100px;
+    margin: 0px auto;
+}
+
+nav {
+    display: flex;
+    width: 38%;
+    justify-content: space-between;
+}
+
+.navbutton{
+    border: 1px solid white;
+    padding: 11px 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container {
+    background-color: rgb(83, 83, 83);
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+.col p {
+    color: white;
+    font-size: 0.875rem;
+    padding: 20px 20px;
+    line-height: 1.5rem;
+}
+
+.col {
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(4, 199, 157);
+}
+
+.hide-desktop {
+    display: none;
+}
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+.mobWrapper {
+    display: none;
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .col {
+        width: 45%;
+    }
+
+    .hide-desktop {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .logo {
+        padding: 40px;
+    }
+
+    .header-container {
+        position: relative;
+    }
+    .container {
+        padding-top: 0px;
+    }
+
+    .mobWrapper {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .mobNav {
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+
+    .mybutton {
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+
+
+}
+
+/* Mobile view */
+@media (max-width: 400px) {
+    .col{
+        width: 100%
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+}
